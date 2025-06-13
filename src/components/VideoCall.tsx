@@ -79,9 +79,9 @@ const VideoCall = () => {
   };
 
   return (
-    <div className="w-full h-full flex flex-col">
+    <div className="w-full h-full flex flex-col max-h-full">
       {/* Main video container - responsive for both desktop and mobile */}
-      <div className="relative flex-grow bg-neutral-900 rounded-lg overflow-hidden">
+      <div className="relative flex-grow bg-neutral-900 rounded-lg overflow-hidden min-h-0">
         {/* Remote video (main/large video) */}
         <video
           ref={remoteVideoRef}
